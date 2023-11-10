@@ -25,6 +25,9 @@ draw_frame(word)
 # набора из трех чисел: (A1, B1, C1) и (A2, B2, C2).
 
 def SortDec3(A, B, C):
+    if not isinstance(A, (float, int)) or not isinstance(B, (float, int)) or not isinstance(C, (float, int)):
+        raise ValueError("Значения должны быть типа int или float ")
+    
     if A < B:
         A, B = B, A
     if B < C:
