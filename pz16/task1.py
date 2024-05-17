@@ -1,5 +1,6 @@
 #Создайте класс «Матрица», который имеет атрибуты количества строк и столбцов.
 #Добавьте методы для сложения, вычитания и умножения матриц.
+import pickle
 
 class Matrix:
     columns = 0
@@ -63,3 +64,21 @@ m5 = m1.multypli(m2)
 m3.show()
 m4.show()
 m5.show()
+
+
+def save_def(obj, file_path):
+    with open(file_path, 'wb') as file:
+        pickle.dump(obj, file)
+
+def load_def(file_path):
+    with open(file_path, 'rb') as file:
+        return pickle.load(file)
+
+save_def(m1, 'matrix1.pkl')
+save_def(m2, 'matrix2.pkl')
+save_def(m3, 'result_matrix.pkl')
+
+
+loaded_m1 = load_def('matrix1.pkl')
+loaded_m2 = load_def('matrix2.pkl')
+loaded_result = load_def('result_matrix.pkl')
