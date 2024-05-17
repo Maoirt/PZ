@@ -4,7 +4,5 @@
 # Практические
 
 ### Практическая 2
-
-Решение (.py) - [file.py](Pz2/main.py)
-
-Отчет (.pdf) - [report.pdf](Pz2/report.pdf)
+- Решение (.py) - [file.py](Pz2/main.py)
+- Отчет (.pdf) - [report.pdf](Pz2/report.pdf)
